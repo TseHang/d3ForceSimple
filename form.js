@@ -9,22 +9,22 @@ function submit(){
 		choose c --> 3
 		choose d --> 4
 	*/
-	var q1 = $('#q1').val();
-	var q2 = $('#q2').val();
-	var q3 = $('#q3').val();
-	var q4 = $('#q4').val();
-	var q5 = $('#q5').val();
-
-	$('#text').text(q1 +" : "+ q2 + " : " +q3 +" : "+ q4 + " : "+ q5)
-
-	var ref = DB.database().ref('/').push().set({
-    q1: q1,
-    q2: q2,
-    q3: q3,
-    q4: q4,
-    q5: q5
+  var result = {};
+  $('input:checked').each(function() {
+    result[this.name] = this.value;
   });
-	console.log(ref);
+
+  console.log(result);
+	var ref = DB.database()
+    .ref('/')
+    .push()
+    .set(result)
+    .then(function() {
+      console.log('sucuess');
+    })
+    .catch(function() {
+      console.log('error');
+    });
 
 	//重新整理
   // window.location.reload();
