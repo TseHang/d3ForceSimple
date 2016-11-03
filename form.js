@@ -21,11 +21,11 @@ function submit(){
     .set(result)
     .then(function() {
       console.log('sucuess');
+      
+      //重新整理
+  		window.location.reload();
     })
     .catch(function() {
       console.log('error');
     });
-
-	//重新整理
-  // window.location.reload();
 }
