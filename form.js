@@ -23,7 +23,9 @@ function submit(){
       console.log('sucuess');
       
       //重新整理
-  		window.location.reload();
+  		// window.location.reload();
+
+  		window.location = "finish.html";
     })
     .catch(function() {
       console.log('error');
