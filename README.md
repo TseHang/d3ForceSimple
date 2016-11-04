@@ -16,8 +16,8 @@ It's a demo to use d3.js making a gravity simulation .
 - form.html : write your own form 
 
 ### Usage
-1. Create a [Firebase](https://firebase.google.com) project 
-2. Get your project's config code ( Remember setting your firebase's project rule `public` or `user`, that can make you get data successly )
+- Create a [Firebase](https://firebase.google.com) project 
+- Get your project's config code ( Remember setting your firebase's project rule `public` or `user`, that can make you get data successly )
 ```html
 <script>
   // Initialize Firebase
@@ -33,8 +33,8 @@ It's a demo to use d3.js making a gravity simulation .
 </script>
 ```
 
-3. Set config code in `firebase_config.js` 
-4. Happy start !
+- Set config code in `firebase_config.js` 
+- Happy start !
 
 
 Control input data:
