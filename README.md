@@ -16,8 +16,8 @@ It's a demo to use d3.js making a gravity simulation .
 - form.html : write your own form 
 
 ### Keypress
-` / ` : change state ( analysis ) 
-` . ` : on / off shaking !!
+- ` / ` : change state ( analysis ) 
+- ` . ` : on / off shaking !!
 
 ---
 ##### License : MIT © NCKU-CCS - Tsehang
