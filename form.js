@@ -21,9 +21,6 @@ function submit(){
     .set(result)
     .then(function() {
       console.log('sucuess');
-      
-      //重新整理
-  		// window.location.reload();
 
   		window.location = "finish.html";
     })

@@ -87,10 +87,59 @@
       top: -55px !important;
     }
 
+    .intro-background {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: #333;
+      opacity: .6;
+      left: 0px;
+      top: 0px;
+    }
+
+    .intro-container {
+      position: fixed;
+      width: 50%;
+      left: 50%;
+      top: 30%;
+      text-align: center;
+      padding: .3em 1em;
+      background-color: white;
+      border: solid 5px rgba(51, 51, 51, 0.7);
+      border-radius: 20px;
+      transform: translate(-50%);
+    }
+
+    .intro-content {
+      font-size: .9em;
+      font-weight: lighter;
+    }
+
+    .intro-content b {
+      background-color: rgba(153, 149, 149, 0.3);
+      padding: 0px 5px;
+    }
+
+    .btn {
+      border-radius: 14px;
+    }
+
+    .close {
+      display: none;
+    }
   </style>
 </head>
 
 <body style="overflow-x:hidden;">
+  <div class="intro-background"></div>
+  <div class="intro-container">
+    <h3>- 鋼鐵般的即時回饋 -</h3>
+    <div class="intro-content">
+      <p>按下 <b>'/'</b> , 顯示每個問題的分佈情況</p>
+      <p>按下 <b>'.'</b> , 這個就...嘿嘿嘿！>///<</p>
+    </div>
+    <button class="btn" onclick="$('.intro-background, .intro-container').addClass('close');">好，我知道了！</button>
+  </div>
   <div id = "main" ></div>
   <div class = "box">
     <h1 class = "title">鋼鐵般的回饋</h1>

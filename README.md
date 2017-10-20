@@ -9,7 +9,7 @@
 ### Description
 It's a demo to use d3.js making a gravity simulation .
 
-**The interesting thing** is we combined width firebase's database . When a user submit a form / data , we'll insert a gravity ball and then analysis data, realtimely.
+**The interesting thing** is we combined with firebase's database . When a user submit a form / data , we'll insert a gravity ball and then analysis data, **realtimely**.
 
 ### File
 - index.html : show gravity ball ( the data analysis )
